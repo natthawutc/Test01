@@ -92,7 +92,7 @@
         <!-- ปุ่มเปลี่ยนภาษา -->
         <button onclick="toggleLanguage()"
             class="absolute top-5 right-5 bg-white border border-blue-800 text-blue-800 font-bold py-1 px-3 rounded-full text-xs shadow-sm hover:bg-blue-50 transition-colors z-[100]">
-            <span id="lang-btn-text">EN (อังกฤษ)</span>
+            <span id="lang-btn-text">🇺🇸 EN (อังกฤษ)</span>
         </button>
 
         <div class="text-center mb-8">
@@ -315,12 +315,7 @@
 
         <div class="px-4 py-4 flex items-center border-b border-gray-100 bg-white sticky top-0 z-10 shadow-sm">
             <button onclick="switchTab('menu')"
-                class="text-gray-500 hover:text-gray-800 p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </button>
+                class="text-white px-4 py-1.5 rounded-full bg-blue-600 hover:bg-blue-700 transition text-sm font-semibold shadow-sm" data-i18n="btn_back">กลับ</button>
             <h2 class="ml-3 font-bold text-xl text-gray-800" data-i18n="menu_feedback">แนะนำคุณภาพและบริการ</h2>
         </div>
 
@@ -513,11 +508,7 @@
         class="fixed inset-0 z-[60] hidden bg-white flex flex-col transition-transform transform translate-x-full duration-300 max-w-md mx-auto shadow-2xl">
         <div class="px-4 py-3 flex items-center border-b border-gray-100 bg-white sticky top-0 z-10 shadow-sm">
             <button onclick="closeChangePwdModal()"
-                class="text-gray-500 hover:text-gray-800 p-2 rounded-full hover:bg-gray-100 transition"><svg
-                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg></button>
+                class="text-white px-4 py-1.5 rounded-full bg-blue-600 hover:bg-blue-700 transition text-sm font-semibold shadow-sm" data-i18n="btn_back">กลับ</button>
             <h2 class="ml-2 font-bold text-lg text-gray-800" data-i18n="menu_changepwd">เปลี่ยนรหัสผ่าน</h2>
         </div>
         <div class="flex-1 overflow-y-auto p-6 hide-scroll">
@@ -588,11 +579,7 @@
         class="fixed inset-0 z-50 hidden bg-white flex flex-col transition-transform transform translate-x-full duration-300 max-w-md mx-auto shadow-2xl">
         <div class="px-4 py-3 flex items-center border-b border-gray-100 bg-white sticky top-0 z-10 shadow-sm">
             <button onclick="closeRewardDetail()"
-                class="text-gray-500 hover:text-gray-800 p-2 rounded-full hover:bg-gray-100 transition"><svg
-                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg></button>
+                class="text-white px-4 py-1.5 rounded-full bg-blue-600 hover:bg-blue-700 transition text-sm font-semibold shadow-sm" data-i18n="btn_back">กลับ</button>
             <h2 class="ml-2 font-bold text-lg text-gray-800" data-i18n="reward_detail">รายละเอียดของรางวัล</h2>
         </div>
         <div class="flex-1 overflow-y-auto pb-24 hide-scroll">
@@ -662,11 +649,7 @@
         class="fixed inset-0 z-[60] hidden bg-white flex flex-col transition-transform transform translate-x-full duration-300 max-w-md mx-auto shadow-2xl">
         <div class="px-4 py-3 flex items-center border-b border-gray-100 bg-white sticky top-0 z-10 shadow-sm">
             <button onclick="closeMyRewardDetail()"
-                class="text-gray-500 hover:text-gray-800 p-2 rounded-full hover:bg-gray-100 transition"><svg
-                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg></button>
+                class="text-white px-4 py-1.5 rounded-full bg-blue-600 hover:bg-blue-700 transition text-sm font-semibold shadow-sm" data-i18n="btn_back">กลับ</button>
             <h2 class="ml-2 font-bold text-lg text-gray-800" data-i18n="coupon_detail">รายละเอียดคูปอง</h2>
         </div>
         <div class="flex-1 overflow-y-auto pb-6 hide-scroll">
@@ -888,6 +871,7 @@
                 btn_confirm: "ยืนยัน",
                 btn_close: "ปิด",
                 btn_cancel_coupon: "ยืนยันยกเลิก",
+                btn_back: "กลับ",
                 btn_redeem: "แลกของรางวัล",
                 btn_understood: "เข้าใจแล้ว",
                 old_password: "รหัสผ่านเดิม",
@@ -982,6 +966,7 @@
                 btn_confirm: "Confirm",
                 btn_close: "Close",
                 btn_cancel_coupon: "Confirm Cancel",
+                btn_back: "Back",
                 btn_redeem: "Redeem Reward",
                 btn_understood: "Understood",
                 old_password: "Old Password",
@@ -1131,7 +1116,7 @@
             });
 
             // เปลี่ยนข้อความในปุ่มเปลี่ยนภาษาให้มีภาษาไทยกำกับไว้เสมอ
-            document.getElementById('lang-btn-text').innerText = currentLang === 'th' ? 'EN (อังกฤษ)' : 'TH (ไทย)';
+            document.getElementById('lang-btn-text').innerText = currentLang === 'th' ? '🇺🇸 EN (อังกฤษ)' : '🇹🇭 TH (ไทย)';
 
             if (isFeedbackFormLoaded && currentFeedbackTab === 'product') initFeedbackForm();
             if (isServiceFormLoaded && currentFeedbackTab === 'service') initServiceForm();
@@ -1707,7 +1692,8 @@
                     btnConfirm.disabled = false; btnCancel.disabled = false; document.getElementById('txt-confirm-redeem').innerText = t('btn_confirm');
                     closeConfirmModal();
                     if (response.success) {
-                        currentUser.points = response.remainingPoints; document.getElementById('disp-points').innerText = Number(currentUser.points).toLocaleString();
+                        if (response.remainingPoints !== undefined && response.remainingPoints !== null) { currentUser.points = response.remainingPoints; } else { let cleanPoints = String(currentUser.points || '0').replace(/,/g, ''); currentUser.points = Number(cleanPoints) - totalPts; }
+                        document.getElementById('disp-points').innerText = Number(currentUser.points).toLocaleString();
                         myAvailableRewards.unshift({ couponCode: response.couponCode, name: reward.name, points: totalPts, image: reward.image, expireDate: currentLang === 'th' ? 'รอระบบยืนยัน...' : 'Waiting sync...', rawExpireDate: new Date().getTime() + (365 * 24 * 60 * 60 * 1000), redeemDate: response.redeemDateStr || new Date().toLocaleDateString('th-TH'), usedDate: '-', status: '0', colK_Total: currentRedeemQuantity, colL_Remain: currentRedeemQuantity, colM_Used: 0 });
                         renderMyRewards();
                         showMsg(t('success'), `${currentLang === 'th' ? 'ได้รับรหัสคูปอง:' : 'Coupon code:'} ${response.couponCode}\n${currentLang === 'th' ? 'จำนวน' : 'Amount'} ${currentRedeemQuantity} ${currentLang === 'th' ? 'สิทธิ์' : 'Units'}`);
