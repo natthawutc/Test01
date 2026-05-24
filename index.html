@@ -1065,7 +1065,7 @@
             if (GAS_WEBAPP_URL === "YOUR_GAS_WEB_APP_URL_HERE") throw new Error("กรุณาใส่ URL ของ GAS!");
             try {
                 const response = await fetch(GAS_WEBAPP_URL, {
-                    method: 'POST', body: JSON.stringify({ action: action, data: data }),
+                    method: 'POST', body: JSON.stringify({ action: action, data: data, lang: currentLang }),
                     headers: { 'Content-Type': 'text/plain;charset=utf-8' }
                 });
                 return await response.json();
